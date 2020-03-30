@@ -1,0 +1,9 @@
+### IDE configuration
+.idea/
+.vscode/
+javascript30.code-workspace
+javascript30.iml
+
+### OS files
+.DS_Store
+.env
