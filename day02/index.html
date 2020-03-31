@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day02 (Todo List)</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header id="head">
+            <h1>Todo List</h1>
+            <button onclick="onReset()" class="btn">Reset</button>
+        </header>
+        <main id="app">
+            <form id="addTodo">
+                <input type="text" name="todo" class="todoField" placeholder="Intitulé" autofocus>
+                <button type="submit" class="btn">Ajouter à ma liste</button>
+            </form>
+            <ul class="todos" id="todos">
+                <li class="todo">
+                    <!--<input
+                        type="text"
+                        name="todo" 
+                        value="Aller écouter 'L'amour ne disparait jamais' sur JW.ORG"
+                        class="todoField"
+                        onchange="onChange(1)">
+                    <button class="btn" onclick="onDelete(1)">X</button>-->
+                </li>
+            </ul>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

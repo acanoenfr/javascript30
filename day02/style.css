@@ -1,0 +1,111 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Begin of CSS Rules */
+
+#head {
+    position: relative;
+    top: 0; left: 0; right: 0;
+    padding: 10px;
+    margin-bottom: 2rem;
+    line-height: 2rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #009688DD;
+    color: white;
+}
+
+#head h1 {
+    font-size: 1.5rem;
+}
+
+#app #addTodo {
+    text-align: center;
+}
+
+.todoField {
+    background-color: #EEEEEE;
+    line-height: 2.2rem;
+    color: #757575;
+    font-size: 1.2rem;
+    width: 50%;
+    box-sizing: content-box;
+    border: none;
+    outline: none;
+}
+
+.todoField:focus {
+    border-bottom: 3px solid #E91E63;
+}
+
+::placeholder {
+    color: #757575;
+}
+
+.btn {
+    border: none;
+    outline: none;
+    margin: 0;
+    font-size: 1.2rem;
+    background-color: #e91e63FF;
+    color: white;
+    line-height: 2.2rem;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #e91e63BB;
+}
+
+.todos {
+    margin-top: 2rem;
+    text-align: center;
+}
