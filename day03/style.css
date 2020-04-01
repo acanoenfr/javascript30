@@ -61,9 +61,20 @@ body {
     color: #EEEEEE;
 }
 
-#keyCode {
+.key-code {
     margin-top: 10%;
     font-size: 16rem;
+}
+
+.info {
+    margin-top: 10%;
+    font-size: 4rem;
+    background-color: #757575;
+    margin-left: 5%;
+    margin-right: 5%;
+    border: .5px solid #BDBDBD;
+    border-radius: 5px;
+    padding: .5rem .4rem;
 }
 
 .cards {
