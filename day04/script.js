@@ -9,15 +9,15 @@ setInterval(function() {
     var timeRemained = futureDate - Date.now()
     if (timeRemained < 0) {
         clearInterval()
-        el_days.innerHTML = pad(0)
-        el_hours.innerHTML = pad(0)
-        el_minutes.innerHTML = pad(0)
-        el_seconds.innerHTML = pad(0)
+        el_days.innerHTML = pad(0)+' j'
+        el_hours.innerHTML = pad(0)+' h'
+        el_minutes.innerHTML = pad(0)+' m'
+        el_seconds.innerHTML = pad(0)+' s'
     } else {
-        el_days.innerHTML = pad(Math.floor(timeRemained / (1000 * 60 * 60 * 24)))
-        el_hours.innerHTML = pad(Math.floor((timeRemained % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)))
-        el_minutes.innerHTML = pad(Math.floor((timeRemained % (1000 * 60 * 60)) / (1000 * 60)))
-        el_seconds.innerHTML = pad(Math.floor((timeRemained % (1000 * 60)) / 1000))
+        el_days.innerHTML = pad(Math.floor(timeRemained / (1000 * 60 * 60 * 24)))+' j'
+        el_hours.innerHTML = pad(Math.floor((timeRemained % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)))+' h'
+        el_minutes.innerHTML = pad(Math.floor((timeRemained % (1000 * 60 * 60)) / (1000 * 60)))+' m'
+        el_seconds.innerHTML = pad(Math.floor((timeRemained % (1000 * 60)) / 1000))+' s'
     }
 }, 1000)
 
