@@ -1,0 +1,152 @@
+[
+    {
+        "city": "Paris",
+        "state": "Paris",
+        "population": 2190327
+    },
+    {
+        "city": "Marseille",
+        "state": "Bouches-du-Rhône",
+        "population": 862211
+    },
+    {
+        "city": "Lyon",
+        "state": "Métropole de Lyon",
+        "population": 515695
+    },
+    {
+        "city": "Toulouse",
+        "state": "Haute-Garonne",
+        "population": 475438
+    },
+    {
+        "city": "Nice",
+        "state": "Apes-Maritimes",
+        "population": 342637
+    },
+    {
+        "city": "Nantes",
+        "state": "Loire-Atlantique",
+        "population": 306694
+    },
+    {
+        "city": "Montpellier",
+        "state": "Hérault",
+        "population": 281613
+    },
+    {
+        "city": "Strasbourg",
+        "state": "Bas-Rhin",
+        "population": 279284
+    },
+    {
+        "city": "Bordeaux",
+        "state": "Gironde",
+        "population": 252040
+    },
+    {
+        "city": "Lille",
+        "state": "Nord",
+        "population": 232440
+    },
+    {
+        "city": "Rennes",
+        "state": "Ille-et-Vilaine",
+        "population": 216268
+    },
+    {
+        "city": "Reims",
+        "state": "Marne",
+        "population": 183113
+    },
+    {
+        "city": "Saint-Etienne",
+        "state": "Loire",
+        "population": 171924
+    },
+    {
+        "city": "Le Havre",
+        "state": "Seine-Maritime",
+        "population": 170352
+    },
+    {
+        "city": "Toulon",
+        "state": "Var",
+        "population": 169634
+    },
+    {
+        "city": "Grenoble",
+        "state": "Isère",
+        "population": 158180
+    },
+    {
+        "city": "Dijon",
+        "state": "Côte-d'Or",
+        "population": 155090
+    },
+    {
+        "city": "Angers",
+        "state": "Maine-et-Loire",
+        "population": 151229
+    },
+    {
+        "city": "Nîmes",
+        "state": "Gard",
+        "population": 151001
+    },
+    {
+        "city": "Villeurbanne",
+        "state": "Métropole de Lyon",
+        "population": 149019
+    },
+    {
+        "city": "Saint-Denis",
+        "state": "La Réunion",
+        "population": 147920
+    },
+    {
+        "city": "Aix-en-Provence",
+        "state": "Bouches-du-Rhône",
+        "population": 143006
+    },
+    {
+        "city": "Le Mans",
+        "state": "Sarthe",
+        "population": 142991
+    },
+    {
+        "city": "Clermond-Ferrand",
+        "state": "Puy-de-Dôme",
+        "population": 142686
+    },
+    {
+        "city": "Brest",
+        "state": "Finistère",
+        "population": 139342
+    },
+    {
+        "city": "Tours",
+        "state": "Indre-et-Loire",
+        "population": 136565
+    },
+    {
+        "city": "Amiens",
+        "state": "Somme",
+        "population": 133755
+    },
+    {
+        "city": "Limoges",
+        "state": "Haute-Vienne",
+        "population": 132660
+    },
+    {
+        "city": "Annecy",
+        "state": "Haute-Savoie",
+        "population": 126419
+    },
+    {
+        "city": "Perpignan",
+        "state": "Pyrénées-Orientales",
+        "population": 121875
+    }
+]
