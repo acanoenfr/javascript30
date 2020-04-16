@@ -7,3 +7,7 @@ javascript30.iml
 ### OS files
 .DS_Store
 .env
+
+### Node
+node_modules/
+package-lock.json

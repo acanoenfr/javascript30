@@ -1,7 +1,7 @@
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition
 
 const words = document.querySelector('#app .words')
-const speech = new window.SpeechRecognition()
+const speech = new SpeechRecognition()
 speech.interimResults = true
 speech.lang = 'fr-FR'
 
