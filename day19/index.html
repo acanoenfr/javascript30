@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day 19 (Speech Synthesis)</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main id="app">
+            <div class="card">
+                <h1 class="card-title">Synthèse vocale</h1>
+                <select name="voice" id="voices">
+                    <option value="">-- Sélectionner une voix --</option>
+                </select>
+                <label for="rate">Vitesse</label>
+                <input type="range" name="rate" min="0" max="3" value="1" step=".1">
+                <label for="pitch">Amplitude</label>
+                <input type="range" name="pitch" min="0" max="2" step=".1">
+                <textarea name="text">Bonjour le monde !</textarea>
+                <button id="stop">Arrêter</button>
+                <button id="play">Lire</button>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>

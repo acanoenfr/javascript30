@@ -1,0 +1,125 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Begin of CSS Rules */
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#app {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00BCD4;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+}
+
+#app .card {
+    position: relative;
+    width: 50em;
+    padding: 2em;
+    margin: 0 auto;
+    border-radius: 1em;
+    background-color: white;
+    overflow: hidden;
+    z-index: 1;
+    box-shadow: 0 0 .25em .25em rgba(0, 0, 0, .1);
+}
+
+#app .card .card-title {
+    width: calc(100% + 4rem);
+    margin: -2rem 0 2rem -2rem;
+    padding: .5rem;
+    background-color: #FFC107AA;
+    border-bottom: calc(1em / 5) solid #FFC107DD;
+    text-align: center;
+    font-size: 2.5em;
+    text-shadow: calc(1em / 5) calc(1em / 5) 0 #F3C01044;
+}
+
+#app .card input,
+#app .card button,
+#app .card select,
+#app .card textarea {
+    width: 100%;
+    display: block;
+    margin: .5em 0;
+    padding: .5em;
+    border: 0;
+    font-size: 1.5em;
+    background-color: #F7F7F7;
+    outline: 0;
+}
+
+#app textarea {
+    height: 10em;
+}
+
+#app .card button {
+    position: relative;
+    background-color: #FFC107AA;
+    border: 0;
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+    font-size: 1.5em;
+    border-bottom: calc(1em /5) solid #FFC107DD;
+    cursor: pointer;
+}
+
+#app .card button:active {
+    top: calc(1em / 10);
+}
+
+#app .card button:nth-of-type(1) {
+    margin-right: 2%;
+}
