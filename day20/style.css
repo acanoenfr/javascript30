@@ -1,0 +1,210 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Begin of CSS Rules */
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+#app {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #616161;
+    color: white;
+    font-weight: 300;
+}
+
+#app .player {
+    position: relative;
+    max-width: 750px;
+    border: 5px solid rgba(0, 0, 0, .2);
+    box-shadow: 0 0 20px solid rgba(0, 0, 0, .2);
+    font-size: 0;
+    overflow: hidden;
+}
+
+#app .player:fullscreen,
+#app .player:-webkit-full-screen {
+    max-width: none;
+    width: 100%;
+}
+
+#app .player-video {
+    width: 100%;
+}
+
+#app .player-btn {
+    background: none;
+    border: 0;
+    line-height: 1;
+    color: white;
+    text-align: center;
+    outline: 0;
+    cursor: pointer;
+    max-width: 50px;
+}
+
+#app .player-btn:focus {
+    border-color: #FF9800;
+}
+
+#app .player-btn:hover {
+    background-color: #FF9800;
+}
+
+#app .player-slider {
+    width: 10px;
+    height: 30px;
+}
+
+#app .player-controls {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgba(0, 0, 0, .1);
+    transform: translateY(100%) translateY(-5px);
+    transition: all .3s;
+}
+
+#app .player:hover .player-controls {
+    transform: translateY(0);
+}
+
+#app .player:hover .progress {
+    height: 15px;
+}
+
+#app .player-controls > * {
+    flex: 1;
+}
+
+#app .progress {
+    position: relative;
+    flex: 10;
+    flex-basis: 100%;
+    height: 5px;
+    transition: height .3s;
+    background-color: rgba(0, 0, 0, .5);
+    cursor: pointer;
+}
+
+#app .progress-bar {
+    width: 0%;
+    height: 100%;
+    background-color: #FF9800FF;
+    flex: 0;
+}
+
+/* Update inputs type range */
+
+input[type=range] {
+    -webkit-appearance: none;
+    background:transparent;
+    width: 100%;
+    margin: 0 5px;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+    background: rgba(255,255,255,0.8);
+    border-radius: 1.3px;
+    border: 0.2px solid rgba(1, 1, 1, 0);
+}
+  
+input[type=range]::-webkit-slider-thumb {
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background: #FF9800;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -3.5px;
+    box-shadow:0 0 2px rgba(0,0,0,0.2);
+}
+  
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #bada55;
+}
+  
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 8.4px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0), 0 0 1px rgba(13, 13, 13, 0);
+    background: #ffffff;
+    border-radius: 1.3px;
+    border: 0.2px solid rgba(1, 1, 1, 0);
+}
+  
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0), 0 0 0 rgba(13, 13, 13, 0);
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background: #FF9800;
+    cursor: pointer;
+}
