@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Day27 (Image Properties)</title>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main id="app">
+            <div class="props">
+                <h2>Blur :</h2>
+                <input type="range" list="tickmarks" id="blur" value="0" step="5" min="0" max="50" oninput="onChange()">
+                <h2>Niveaux de gris :</h2>
+                <input type="range" list="tickmarks" id="grayscale" value="0" step="5" min="0" max="100" oninput="onChange()">
+                <h2>Opacité :</h2>
+                <input type="range" list="tickmarks" id="opacity" value="1" step=".1" min="0" max="1" oninput="onChange()">
+                <h2>Luminosité :</h2>
+                <input type="range" list="tickmarks" id="brightness" value="100" step="5" min="0" max="200" oninput="onChange()">
+                <h2>Saturation :</h2>
+                <input type="range" list="tickmarks" id="saturate" value="100" step="5" min="0" max="500" oninput="onChange()">
+                <h2>Sepia :</h2>
+                <input type="range" list="tickmarks" id="sepia" value="0" step="5" min="0" max="100" oninput="onChange()">
+            </div>
+            <div class="image">
+                <canvas class="canvas"></canvas>
+            </div>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
