@@ -3,7 +3,7 @@ var el_hours = document.getElementById('hours')
 var el_minutes = document.getElementById('minutes')
 var el_seconds = document.getElementById('seconds')
 
-var futureDate = new Date(2023, 1, 6, 17, 17, 0).getTime()
+var futureDate = new Date(2026, 1, 6, 17, 17, 0).getTime()
 
 setInterval(function() {
     var timeRemained = futureDate - Date.now()
